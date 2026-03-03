@@ -1,0 +1,57 @@
+.topnav-wrapper {
+  background: #f8f9fa;
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 42px;
+
+    .navbar-brand {
+      font-size: 14px;
+      color: #666666;
+    }
+
+    .navbar-nav {
+      margin-left: auto; 
+      display: flex;
+      gap: 20px; 
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          text-decoration: none;
+          color: #666666;
+
+          &:hover {
+            color: #007bff;
+          }
+
+          .topnav-icon {
+            width: 20px;
+            height: 20px;
+          }
+
+          span {
+            font-size: 14px;
+            b{
+                color: #909090;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// media query all scss code write here:-
+@media (min-width: 0px) and (max-width: 992px) {
+  .topnav-wrapper{
+    display: none;
+  }
+}

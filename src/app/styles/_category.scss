@@ -1,0 +1,43 @@
+.category-section {
+    display: none;
+  .category-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .category-pill {
+    padding: 6px 16px;
+    border: 1px solid #0b8a42;
+    border-radius: 6px;
+    background: #fff;
+    color: #0b8a42;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: #f5fff9;
+    }
+
+    &.active {
+      background: #0b8a42;
+      color: #fff;
+      border-color: #0b8a42;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+   .category-section{
+    display: block;
+   }
+}

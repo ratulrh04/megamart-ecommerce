@@ -1,0 +1,126 @@
+.deals-section {
+  padding: 20px 0;
+  margin-top: 2rem;
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 16px;
+  }
+
+  /* Heading */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111;
+      
+      .highlight {
+        color: #22c55e; // সবুজ টেক্সট
+      }
+    }
+
+    .view-all {
+      font-size: 14px;
+      color: #22c55e;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  }
+
+  /* Swiper Container */
+  .deals-swiper {
+     
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .deal-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+      height: auto;
+      &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        transform: translateY(-3px);
+      }
+      .deal-thumb {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+         .dapper_image_wrapper{
+            width: 100%;
+            height: 100%;
+            background-color: #f3f2f2; 
+            border-radius: 12px;
+            img {
+              object-fit: contain;
+              padding: 10px;
+              overflow: hidden;
+              align-items: center;
+              text-align:center;
+              margin-left:8px;
+              box-sizing: border-box;
+            }
+         }
+         &:hover{
+          box-shadow: 0 6px 18px #00000026;
+          border: 2px solid #298bee;
+          border-radius: 12px;
+         }
+      } 
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 4px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+// responsive all scss code writing start here:-
+@media (min-width: 0px) and (max-width: 576px) {
+   .header {
+    h2{
+      width:240px;
+    }
+   }
+  .view-all {
+      font-size: 14px;
+      color: #22c55e;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin-bottom: 20px;
+    }
+}

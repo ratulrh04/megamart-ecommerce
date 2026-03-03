@@ -1,0 +1,167 @@
+.midnav-wrapper {
+  .navbar {
+    padding: 0.5rem 1rem;
+    .navbar-brand{
+        background-color:#ddd;
+        width: 180px;
+        height:65px;
+        margin-left: 7px;
+    }
+
+    .nav-link {
+      color: #666666;
+      font-weight: 400;
+      margin-right: 1rem;
+      &:hover {
+        color: #28a745; // green hover
+      }
+    }
+
+    .search-box {
+        position: relative;
+        width: 500px;
+        .search_svg{
+            position: absolute;
+            top:10px;
+            left:10px;
+            width:18px !important;
+        }
+      input {
+        border-radius:8px 0 0 8px;
+        border: 1px solid #ddd;
+        border-right: none !important;
+        padding: 0.6rem 1rem;
+        background-color: #ddf0e7;
+
+        &:focus{
+          outline: none;
+          box-shadow: none; 
+        }
+        
+      }
+      input::placeholder{
+           font-size: 14px;
+           padding-left: 20px;
+        }
+      .btn-search {
+        border-radius: 0 8px 8px 0;
+        background-color: #d8f3dc;
+        border: 1px solid #ddd;
+        border-left: none !important;
+        background-color: #dfede6;
+        color: #28a745;
+        .threeline{
+            width:25px;
+            height:17px;
+        }
+      }
+    }
+    .SingCart_Section{
+        margin-right: 28px;
+        .singin{
+            border-right: 2px solid #ddd;
+        .user_svg{
+            width: 23px;
+            height: 26px;
+          } 
+          span{
+            font-weight: 500;
+            color:#444444d8
+          }
+        }
+        .buy{
+            margin-left:16px;
+          .buy_svg{
+             width:23px;
+             height:26px;
+             margin:0px 5px;
+             margin-left: -10px;
+          }
+           span{
+            font-weight: 500;
+            color:#444444d8;
+            margin-top: 3px;
+            
+          }
+        }
+        .profile{
+            display: none; //for dextop view the profile is hide
+            margin-left:16px;
+          .profile_svg{
+             width:30px;
+             height:30px;
+             margin:0px 5px;
+             margin-left: -10px;
+          }
+           span{
+            font-weight: 500;
+            color:#444444d8;
+            margin-top: 3px;
+            
+          }
+        }
+    }
+  }
+}
+
+
+// media query all scss code write here:-
+@media (min-width: 0px) and (max-width: 992px) {
+     .nav{
+      position: relative;
+     }
+  .navbar-toggler{
+    display: none;
+  }
+  .midnav-wrapper{
+      .navbar-nav{
+      display: none;
+    }
+  }
+  .singin,
+  .buy {
+    display: none;
+  }
+  .navbar{
+     .navbar-brand{
+       display:none !important;
+    }
+  }
+  .btn-search{
+    display: none;
+  }
+  .form-control{
+    width: 80%;
+    border-radius: 45px !important;
+    display: inline;
+  }
+   .profile{
+            display: inline-block !important; //for dextop view the profile is hide
+            margin-left:16px;
+            position: absolute;
+            right: 60px;
+    top: 10px;
+          .profile_svg{
+             width:44px !important;
+             height:41px !important;
+             margin:0px 5px;
+             margin-left: -10px;
+          }
+        }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+   .profile{
+            display: inline-block !important; //for dextop view the profile is hide
+            margin-left:16px;
+            position: absolute;
+            right: 0px;
+    top: 10px;
+          .profile_svg{
+             width:44px !important;
+             height:41px !important;
+             margin:0px 5px;
+             margin-left: -10px;
+          }
+        }
+}

@@ -1,0 +1,42 @@
+.topOffer-section{
+  margin-top: 4rem;
+    .header{
+      display: flex;
+      justify-content: space-between;
+      h2{
+          font-size: 20px;
+          font-weight: 700;
+          color: #111;
+        .highlight{
+          color: #22c55e;
+        }
+      }
+      .view-all{
+        font-size: 14px;
+        color: #22c55e;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+    }
+  .pads-swiper {
+    position: relative;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #22c55e;
+      transition: 0.3s;
+      &:hover {
+        color: #16a34a;
+      }
+    }
+  }
+}
+
+// Media query all scss code here:-
+@media (min-width: 0px) and (max-width: 576px) {
+  .swiper-button-prev,
+    .swiper-button-next{
+      display: none !important;
+    }
+}

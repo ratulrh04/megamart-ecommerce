@@ -1,0 +1,87 @@
+
+.carousel_container{
+  margin-top: 4.5rem;
+
+}
+.carousel-content {
+  background-color: #1c2340; 
+  border-radius: 12px;
+  color: #fff;
+  min-height: 250px;
+  height: 300px;
+  ma
+
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    h4{
+      padding-left:30px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    h1{
+      padding-left:30px ;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    p{
+      padding-left:30px ;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+/* Round Custom Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  
+}
+
+.custom-prev,
+.custom-next {
+    background: #fff;
+    color: #0b8a42;
+    font-size: 37px;
+    border-radius: 50%;
+    padding: 8px 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1490196078);
+    width: 92px;
+    height: 80px;
+    z-index: 1;
+    margin: 0 -20px;
+}
+
+.carousel-control-prev {
+  left: -15px;
+}
+
+.carousel-control-next {
+  right: -15px;
+}
+
+
+// Media query all scss code here:-
+@media (min-width: 0px) and (max-width: 576px) {
+  .carousel_container{
+     margin-top: 25px;
+  }
+  .text-content {
+    display: none !important;
+  }
+  .custom-prev,
+.custom-next{
+  display: none;
+}
+.pad_svg{
+    width: 85%;
+    margin-left: 30px;
+  }
+}
